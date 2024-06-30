@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Criptografando</title>
+    <link rel="stylesheet" href="./style/style.css">
+
+</head>
+<body>
+    <main class="main container">
+        <header class="cabecalho">
+            <img class="container__logo" src="./assets/img/chave.png" alt="logo-chave">
+            <h1>Conversa Secreta</h1>
+        </header>
+
+        <div class="container-input">
+            <div class="input">
+                <textarea id="input-texto" placeholder="Digite seu texto aqui..."></textarea>
+                <p>Apenas letras minúsculas e sem acento!</p>
+            </div>
+
+            <div id="output">
+                <img src="./assets/img/cadeado-medio.png" alt="img-cadeado">
+                <h2>Sua mensagem apareserá aqui!</h2>
+                <span>Digite um texto que deseja Criptografar ou descriptorgrafar.</span>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <div class="container-btn">
+                <button class="btn-criptografar" onclick="criptografar()">
+                    criptografar
+                </button>
+                <button onclick="descriptografar()" class="btn-descriptografar">
+                    descriptografar
+                </button>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <div class="icons">
+            <a href="./assets/img/logo-youtube.svg"><ion-icon name="logo-youtube"></ion-icon></a>
+            <a href="./assets/img/logo-instagram.svg"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="./assets/img/logo-linkedin.svg"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href="./assets/img/logo-github.svg"><ion-icon name="logo-github"></ion-icon></a>
+        </div>
+        <h3>Desenvolvido por André A. M. Silva</h3>
+    </footer>
+    <script src="./js/javascript.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> 
+    <script nomodule src="https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
